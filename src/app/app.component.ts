@@ -11,6 +11,7 @@ export class AppComponent {
   dinnerButtonTitle = 'Jantar';
   coffeeButtonTitle = 'Café';
   iceCreamButtonTitle = 'Sorvete';
+  listButtonTitle = 'Lista';
   lunchOptions = [
     'Reteteu',
     'Cozinhando Escondidinho',
@@ -34,16 +35,21 @@ export class AppComponent {
     "Tokio's",
     'Temix',
     'Malaquias Forneria',
-    'Kwai',
-    "Wayne's",
     'Açai Concept',
-    'Açaí',
+    'Casa do Pará',
     'Forneria 1121',
     'La Trattoria',
     'Buca Tratoria',
     'Bercy',
     'Anjo Solto',
-    'Ca-Já'
+    'Ca-Já',
+    'Raiki',
+    'Vila Foria',
+    'Mafalda',
+    'Maverick',
+    'Rec Burguer',
+    'BNQ',
+    'Faaca'
   ];
   coffeeOptions = [
     'Na Venda',
@@ -84,5 +90,14 @@ export class AppComponent {
   getRandomIceCreamOption() {
     const index = Math.floor(Math.random() * Math.floor(this.iceCreamOptions.length));
     this.chosenOption = this.iceCreamOptions[index];
+  }
+
+  listAll() {
+    const allLunch = `Almoço: ${this.lunchOptions.join(', ')}\n\n\n`;
+    const allDinner = `Jantar: ${this.dinnerOptions.join(', ')}\n\n\n`;
+    const allCoffee = `Café: ${this.coffeeOptions.join(', ')}\n\n\n`;
+    const allIceCream = `Sorvete: ${this.iceCreamOptions.join(', ')}`;
+    
+    this.chosenOption = `${allLunch}${allDinner}${allCoffee}${allIceCream}`;
   }
 }
