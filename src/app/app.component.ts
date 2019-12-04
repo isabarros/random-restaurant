@@ -49,7 +49,8 @@ export class AppComponent {
     'Maverick',
     'Rec Burguer',
     'BNQ',
-    'Faaca'
+    'Faaca',
+    'La Romana'
   ];
   coffeeOptions = [
     'Na Venda',
