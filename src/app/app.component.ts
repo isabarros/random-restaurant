@@ -69,7 +69,7 @@ export class AppComponent {
     { name: 'San Paolo Gelato Gourmet', url: 'https://goo.gl/maps/HMZbv5iSDW4mgGNz5' },
     { name: 'Santo Doce', url: 'https://goo.gl/maps/u4dDYC2xcyEbQBfi6' }
   ];
-  chosenOption = {};
+  chosenOption = { name:'', url:'' };
   restaurantList = [];
 
   getRandomLunchOption() {
