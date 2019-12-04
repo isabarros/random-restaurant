@@ -1,8 +1,13 @@
 <table>
     <tr>
         <div class="chosen-option-container">
-          <label>{{chosenOption}}</label>
-        </div>    
+          <a href="{{chosenOption.url}}">{{chosenOption.name}}</a>
+          <ul>
+            <li *ngFor="let restaurant of restaurantList">
+                <a href="{{restaurant.url}}">{{restaurant.name}}</a>
+            </li>
+          </ul>
+        </div>
     </tr>
     <tr>
         <div class="pick-button-container">
